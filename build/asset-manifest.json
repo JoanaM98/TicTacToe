@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.b87971da.js",
-    "index.html": "/index.html",
-    "main.b87971da.js.map": "/static/js/main.b87971da.js.map"
+    "main.js": "/TicTacToe/static/js/main.b87971da.js",
+    "index.html": "/TicTacToe/index.html",
+    "main.b87971da.js.map": "/TicTacToe/static/js/main.b87971da.js.map"
   },
   "entrypoints": [
     "static/js/main.b87971da.js"
