@@ -1,0 +1,223 @@
+html,body{
+    height:100vh;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+background-image: url("./images/background.png");
+}
+
+.largeContainer{
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 6rem;
+    margin: 0;
+    color:transparent;
+    background:linear-gradient(to right,#04929a,#3FC1C9);
+    background-clip: text;
+
+}
+
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    background-color: #364F6B;
+    margin: 30px 0;
+}
+
+button:hover{
+    background-color: #3FC1C9;
+    color:white;
+}
+
+.restart-btn{
+    margin:100px 0 0;
+}
+
+.game {
+    text-align: center;
+}
+
+.title{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    width:600px;
+    height: 600px;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    background-color:transparent;
+}
+
+.cell {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cell1, #cell2, #cell3, #cell4, #cell5, #cell6 {
+    border-bottom: 3px solid #364F6B;
+}
+
+
+#cell7, #cell8, #cell9,#cell4, #cell5, #cell6  {
+    border-top: 3px solid #364F6B;
+}
+
+#cell1, #cell2, #cell4, #cell5, #cell7, #cell8 {
+    border-right: 3px solid #364F6B;
+}
+
+#cell3, #cell6, #cell9, #cell2, #cell5, #cell8 {
+    border-left: 3px solid #283b50;
+}
+
+.symbol{
+    font-size: 60px;
+}
+
+.cross{
+    color:#3FC1C9;
+    
+}
+
+.circle {
+    color:#364F6B;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        color:#d8416f;
+      }
+      to {
+        transform: scale(1.3);
+        color:#FC5185;
+      }
+}
+.winningCell{
+    animation: pulse 0.6s ease-in-out 4 forwards;
+}
+
+.game-over{color:#FC5185;}
+
+
+footer{
+    color:#a3cdcf;
+    font-size: 17px;
+    padding:20px 0;
+}
+
+@media (max-width: 900px){   
+    .largeContainer{
+        height:90vh;
+    } 
+    h1{
+        font-size: 5rem;
+    }
+    .grid{
+        width:500px;
+        height:500px;
+    }
+}
+
+
+@media (max-width: 600px){    
+    .largeContainer{
+        height:70vh;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+  
+    .grid{
+        height: 400px;
+        width:400px;
+    }
+    .symbol{
+        font-size: 50px;
+    }
+
+    .title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #cell1, #cell2, #cell3, #cell4, #cell5, #cell6 {
+        border-bottom: 2px solid #364F6B;
+    }
+    
+    
+    #cell7, #cell8, #cell9,#cell4, #cell5, #cell6  {
+        border-top: 2px solid #364F6B;
+    }
+    
+    #cell1, #cell2, #cell4, #cell5, #cell7, #cell8 {
+        border-right: 2px solid #364F6B;
+    }
+    
+    #cell3, #cell6, #cell9, #cell2, #cell5, #cell8 {
+        border-left: 2px solid #364F6B;
+    }
+
+    footer{
+        font-size: 14px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px){    
+    .largeContainer{
+        height:90vh;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .grid{
+        height: 250px;
+        width:250px;
+    }
+    .symbol{
+        font-size: 35px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .restart-btn{
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+}
